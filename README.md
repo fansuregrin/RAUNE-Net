@@ -4,7 +4,7 @@ A refined and reliable Underwater Image Enhancement (UIE) method.
 ## 🤗Abstract
 > Underwater image enhancement (UIE) poses challenges due to distinctive properties of the underwater environment, including low contrast, blurriness, and color distortion. The application of deep learning has quietly revolutionized various areas of scientific research, including UIE, in recent years. However, existing deep learning-based UIE methods generally suffer from issues of weak robustness and limited adaptability. In this paper, we investigated different network architectures extended from attention and residual mechanisms to explore their robustness and effectiveness in enhancing real-world underwater images, and refined beneficial architectural components to propose a more reliable and reasonable UIE network called *RUNE-Net*. Furthermore, we have collected and created two datasets specifically designed for evaluating UIE methods, which contains different types of underwater distortions and degradations. Through experimental validation, our model has demonstrated promising objective performance and consistent visual results across various underwater image test sets compared to other UIE methods.
 
-## Experimental Results
+## 🎲Experimental Results
 
 ### Experiments on Different UIE Methods
 we compared RUNE-Net with eight other UIE methods (i.e., UT-UIE [13], SyreaNet [17], WaterNet [8], UGAN [3], FUnIE-GAN [6], UWCNN [7], SGUIE-Net [14], Cycle-GAN [9]) using the best model from RUNE-Net.
@@ -18,7 +18,7 @@ we compared RUNE-Net with eight other UIE methods (i.e., UT-UIE [13], SyreaNet [
 ## 🎯Notice
 **The whole code will come soon. Please wait :)**
 
-## References
+## 📔References
 [3] Fabbri, C., Islam, M.J., Sattar, J.: Enhancing underwater imagery using generative adversarial networks. In: 2018 IEEE International Conference on Robotics and Automation (ICRA). pp. 7159–7165. IEEE (2018)
 [6] Islam, M.J., Xia, Y., Sattar, J.: Fast underwater image enhancement for improved visual perception. IEEE Robotics and Automation Letters 5(2), 3227–3234 (2020)
 [7] Li, C., Anwar, S., Porikli, F.: Underwater scene prior inspired deep underwater image and video enhancement. Pattern Recognition 98, 107038 (2020)
