@@ -4,7 +4,7 @@ A refined and reliable Underwater Image Enhancement (UIE) method.
 ## 🤗Abstract
 > Underwater image enhancement (UIE) poses challenges due to distinctive properties of the underwater environment, including low contrast, blurriness, and color distortion. The application of deep learning has quietly revolutionized various areas of scientific research, including UIE, in recent years. However, existing deep learning-based UIE methods generally suffer from issues of weak robustness and limited adaptability. In this paper, we investigated different network architectures extended from attention and residual mechanisms to explore their robustness and effectiveness in enhancing real-world underwater images, and refined beneficial architectural components to propose a more reliable and reasonable UIE network called *RUNE-Net*. Furthermore, we have collected and created two datasets specifically designed for evaluating UIE methods, which contains different types of underwater distortions and degradations. Through experimental validation, our model has demonstrated promising objective performance and consistent visual results across various underwater image test sets compared to other UIE methods.
 
-## Datasets
+## 🛖Datasets
 We used 1 dataset for training and 4 full-reference datasets and 3 non-reference datasets for testing. You can download these datasets by clicking links below.
 
 ### Training Datasets
