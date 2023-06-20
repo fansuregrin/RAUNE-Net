@@ -42,12 +42,12 @@ We used 1 dataset for training and 4 full-reference datasets and 3 non-reference
 ### Experiments on Different UIE Methods
 we compared RUNE-Net with eight other UIE methods (i.e., UT-UIE [13], SyreaNet [17], WaterNet [8], UGAN [3], FUnIE-GAN [6], UWCNN [7], SGUIE-Net [14], Cycle-GAN [9]) using the best model from RUNE-Net.
 
-#### Full-reference Evaluation Results
-![Table 2. Full-reference evaluation results of different UIE methods](./paper_figures/full-ref_different_UIE.png)
-#### Non-reference Evaluation Results
-![Non-reference evaluation results of different methods on U45](./paper_figures/different_methods_comparison_noref_U45.png)
-![Non-reference evaluation results of different methods on RUIE_Color90](./paper_figures/different_methods_comparison_noref_RUIE_Color90.png)
-![Non-reference evaluation results of different methods on UPoor200](./paper_figures/different_methods_comparison_noref_UPoor200.png)
+#### Objective Evaluation Results
+![Table 2. Objective evaluation results of different UIE methods](./paper_figures/objective_evaluation_different_UIE.png
+#### Subjective Evaluation Results
+![Subjective evaluation results of different methods on U45](./paSubjectiveifferent_methods_comparison_subj_eval_U45.png)
+![Subjective evaluation results of different methods on RUSubjective/paper_figures/diSubjectiveds_comparison_subj_eval_RUIE_Color90.png)
+![Subjective evaluation results of different methods on UPoor200](./paper_figures/different_methods_comparison_subj_eval_UPoor200.png)
 ## 🎯Notice
 **The whole code will come soon. Please wait :)**
 
