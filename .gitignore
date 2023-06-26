@@ -1,1 +1,11 @@
 **/__pycache__/
+ugan_runs/
+waternet_runs/
+raunenet_runs/
+checkpoints/
+samples/
+results/
+pretrained/RAUNENet/
+pretrained/WaterNet/
+pretrained/UGAN/
+pretrained/FUnIE_GAN/
