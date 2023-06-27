@@ -2,7 +2,7 @@
 A Residual and Attention-Driven Underwater Image Enhancement Method.
 
 ## 🎯Notice
-**The whole code will come soon. Please wait :)**
+
 
 ## 🤗Abstract
 > Underwater image enhancement (UIE) poses challenges due to distinctive properties of the underwater environment, including low contrast, high turbidity, visual blurriness, and color distortion. In recent years, the application of deep learning has quietly revolutionized various areas of scientific research, including UIE. However, existing deep learning-based UIE methods generally suffer from issues of weak robustness and limited adaptability. In this paper, inspired by residual and attention mechanisms, we propose a more reliable and reasonable UIE network called *RAUNE-Net* ([rɔ:ni net]) by employing residual learning of high-level features at the network's bottle-neck and two aspects of attention manipulations in the down-sampling procedure. Furthermore, we have collected and created two datasets specifically designed for evaluating UIE methods, which contains different types of underwater distortions and degradations. The experimental validation demonstrate that our method obtains promising objective performance and consistent visual results across various underwater image test-sets compared to other eight UIE methods.
@@ -109,6 +109,16 @@ python test_raunenet.py \
     --result_dir results/raunet_test01
 ```
 
+Multiple Epochs Test:
+```bash
+bash scripts/test_raunenet.sh
+# name: test
+# checkpoint_dir: pretrained
+# num_down: 2
+# num_blocks: 30
+# use_att_up: false
+```
+
 Multiple Epochs Test and Assessment:
 ```bash
 bash scripts/test_assess_raunenet.sh
@@ -131,6 +141,13 @@ python test_waternet.py \
     --result_dir results/waternet01
 ```
 
+Multiple Epochs Test:
+```bash
+bash scripts/test_waternet.sh
+# name: test
+# checkpoint_dir: pretrained
+```
+
 Multiple Epochs Test and Assessment:
 ```bash
 bash scripts/test_assess_waternet.sh
@@ -150,6 +167,13 @@ python test_ugan.py \
     --result_dir results/ugan01
 ```
 
+Multiple Epochs Test:
+```bash
+bash scripts/test_ugan.sh
+# name: test
+# checkpoint_dir: pretrained
+```
+
 Multiple Epochs Test and Assessment:
 ```bash
 bash scripts/test_assess_ugan.sh
@@ -167,6 +191,13 @@ python test_funiegan.py \
     --epoch 95 \
     --test_name <YOUR_TESTSET_NAME> \
     --result_dir results/funiegan01
+```
+
+Multiple Epochs Test:
+```bash
+bash scripts/test_funiegan.sh
+# name: test
+# checkpoint_dir: pretrained
 ```
 
 Multiple Epochs Test and Assessment:
@@ -190,7 +221,29 @@ python calc_psnr_ssim.py \
 ```
 
 ## 🪄Training
-The training code will come soon~
+We provide four programs for training with command-line interface. They are:
+- [train_raunenet.py](./train_raunenet.py)
+- [train_waternet.py](./train_waternet.py)
+- [train_ugan.py](./train_ugan.py)
+- [train_funiegan.py](./train_funiegan.py)
+
+Please see them in details.
+
+For example, you can train a model of RAUNE-Net like this:
+```bash
+python train_raunenet.py \
+    --cfg_file configs/train_lsui3879.yaml \
+    --name LSUI3879_PCONT1_SSIM1_SCONT1 \
+    --num_epochs 100 \
+    --batch_size 8 \
+    --lr 0.0001 \
+    --pcont_weight 1 \
+    --ssim_weight 1 \
+    --scont_weight 1 \
+    --seed 2023 \
+    --num_down 2 \
+    --num_blocks 3
+```
 
 ## 🤔Q&A
 If you have any question about this project, please contact `fansuregrin`(or `Wangzhen Peng`) through **wangzhenpeng@stu.ouc.edu.cn** or **pwz113436@gmail.com**! Btw, any pull request is welcome if you are interested in this project:)
