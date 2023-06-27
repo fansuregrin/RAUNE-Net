@@ -114,6 +114,19 @@ python test_ugan.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_
 python test_funiegan.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/funiegan01
 ```
 
+### Calculate `PSNR` and `SSIM`
+We provide a python program in command-line interface (CLI) to calculate `PSNR` and `SSIM`. You can see example below to use this simple tool.
+
+```bash
+# The input_dir may like 'results/raunet_test01/LSUI400/single/predicted/'
+python calc_psnr_ssim.py \
+    --input_dir <YOUR_ENHANCED_IMAGES_DIRECTORY> \
+    --refer_dir <YOUR_REFERENCE_IMAGES_DIRECTORY> \
+    --output_dir <YOUR_OUTPUT_DIRECTORY> \
+    --resize \
+    --width 256 --height 256
+```
+
 ## 🪄Training
 The training code will come soon~
 
