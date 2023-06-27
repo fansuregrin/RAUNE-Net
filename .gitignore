@@ -9,3 +9,4 @@ pretrained/RAUNENet/
 pretrained/WaterNet/
 pretrained/UGAN/
 pretrained/FUnIE_GAN/
+*.tar.gz

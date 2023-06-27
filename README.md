@@ -1,6 +1,9 @@
 # RAUNE-Net
 A Residual and Attention-Driven Underwater Image Enhancement Method.
 
+## 🎯Notice
+**The whole code will come soon. Please wait :)**
+
 ## 🤗Abstract
 > Underwater image enhancement (UIE) poses challenges due to distinctive properties of the underwater environment, including low contrast, high turbidity, visual blurriness, and color distortion. In recent years, the application of deep learning has quietly revolutionized various areas of scientific research, including UIE. However, existing deep learning-based UIE methods generally suffer from issues of weak robustness and limited adaptability. In this paper, inspired by residual and attention mechanisms, we propose a more reliable and reasonable UIE network called *RAUNE-Net* ([rɔ:ni net]) by employing residual learning of high-level features at the network's bottle-neck and two aspects of attention manipulations in the down-sampling procedure. Furthermore, we have collected and created two datasets specifically designed for evaluating UIE methods, which contains different types of underwater distortions and degradations. The experimental validation demonstrate that our method obtains promising objective performance and consistent visual results across various underwater image test-sets compared to other eight UIE methods.
 
@@ -48,11 +51,38 @@ we compared RAUNE-Net with eight other UIE methods (i.e., UT-UIE [13], SyreaNet 
 ![Subjective evaluation results of different methods on U45](./paper_figures/different_methods_comparison_subj_eval_U45.png)
 ![Subjective evaluation results of different methods on RUIE_Color90](./paper_figures/different_methods_comparison_subj_eval_RUIE_Color90.png)
 ![Subjective evaluation results of different methods on UPoor200](./paper_figures/different_methods_comparison_subj_eval_UPoor200.png)
-## 🎯Notice
-**The whole code will come soon. Please wait :)**
+
+## 🕹️Test
+### Pretrained Models
+We provide pretrained models for testing `RAUNE-Net`, `WaterNet`, `UGAN`, and `FUnIE-GAN`. Please click [🔗this link](https://drive.google.com/file/d/1eJrACGoU7WLjgbtj507lkiUUEas4lAsv/view?usp=sharing) to download them. After the download is complete, please unzip and put pretrained weights into the `pretrained` folder. Please see [👉here](./pretrained/README.md) to organize the directory structure for testing.
+
+### Test Examples
+
+#### (1) Test of RAUNE-Net
+```bash
+python test_raunenet.py --name test --checkpoint_dir pretrained --epoch 95 --data_dir <PATH_TO_YOUR_TEST_DATASET> --test_name <YOUR_TESTSET_NAME> --num_down 2 --num_blocks 30 --result_dir results/raunet_test01
+```
+
+#### (2) Test of WaterNet
+```bash
+python test_waternet.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/waternet01
+```
+
+#### (3) Test of UGAN
+```bash
+python test_ugan.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/ugan01
+```
+
+#### (4) Test of FUnIE-GAN
+```bash
+python test_funiegan.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/funiegan01
+```
+
+## 🪄Training
+The training code will come soon~
 
 ## 🤔Q&A
-If you have any question about this project, please contact `fansuregrin` through **wangzhenpeng@stu.ouc.edu.cn** or **pwz113436@gmail.com**! Btw, any pull request is welcome if you are interested in this project:)
+If you have any question about this project, please contact `fansuregrin`(or `Wangzhen Peng`) through **wangzhenpeng@stu.ouc.edu.cn** or **pwz113436@gmail.com**! Btw, any pull request is welcome if you are interested in this project:)
 
 ## 📔References
 [3] Fabbri, C., Islam, M.J., Sattar, J.: Enhancing underwater imagery using generative adversarial networks. In: 2018 IEEE International Conference on Robotics and Automation (ICRA). pp. 7159–7165. IEEE (2018)
