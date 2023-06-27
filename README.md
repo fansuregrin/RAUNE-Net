@@ -96,22 +96,48 @@ We provide pretrained models for testing `RAUNE-Net`, `WaterNet`, `UGAN`, and `F
 
 #### (1) Test of RAUNE-Net
 ```bash
-python test_raunenet.py --name test --checkpoint_dir pretrained --epoch 95 --data_dir <PATH_TO_YOUR_TEST_DATASET> --test_name <YOUR_TESTSET_NAME> --num_down 2 --num_blocks 30 --result_dir results/raunet_test01
+python test_raunenet.py \
+    --name test \
+    --checkpoint_dir pretrained \
+    --epoch 95 \
+    --data_dir <PATH_TO_YOUR_TEST_DATASET> \
+    --test_name <YOUR_TESTSET_NAME> \
+    --num_down 2 \
+    --num_blocks 30 \
+    --result_dir results/raunet_test01
 ```
 
 #### (2) Test of WaterNet
 ```bash
-python test_waternet.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/waternet01
+python test_waternet.py \
+    --name test \
+    --checkpoint_dir pretrained \
+    --data_dir <PATH_TO_YOUR_TEST_DATASET> \
+    --epoch 95 \
+    --test_name <YOUR_TESTSET_NAME> \
+    --result_dir results/waternet01
 ```
 
 #### (3) Test of UGAN
 ```bash
-python test_ugan.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/ugan01
+python test_ugan.py \
+    --name test \
+    --checkpoint_dir pretrained \
+    --data_dir <PATH_TO_YOUR_TEST_DATASET> \
+    --epoch 95 \
+    --test_name <YOUR_TESTSET_NAME> \
+    --result_dir results/ugan01
 ```
 
 #### (4) Test of FUnIE-GAN
 ```bash
-python test_funiegan.py --name test --checkpoint_dir pretrained --data_dir <PATH_TO_YOUR_TEST_DATASET> --epoch 95 --test_name <YOUR_TESTSET_NAME> --result_dir results/funiegan01
+python test_funiegan.py \
+    --name test \
+    --checkpoint_dir pretrained \
+    --data_dir <PATH_TO_YOUR_TEST_DATASET> \
+    --epoch 95 \
+    --test_name <YOUR_TESTSET_NAME> \
+    --result_dir results/funiegan01
 ```
 
 ### Calculate `PSNR` and `SSIM`
