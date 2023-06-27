@@ -28,8 +28,8 @@ class TrainingSet(Dataset):
         self.length = min(len(self.filesA), len(self.filesB))
 
     def __getitem__(self, index):
-        img_A = Image.open(self.filesA[index % self.len])
-        img_B = Image.open(self.filesB[index % self.len])
+        img_A = Image.open(self.filesA[index % self.length])
+        img_B = Image.open(self.filesB[index % self.length])
         # Horizontal file randomly
         if np.random.random() < 0.5:
             img_A = Image.fromarray(np.array(img_A)[:, ::-1, :], "RGB")
@@ -70,15 +70,15 @@ class TestValSet(Dataset):
         self.sub_dir = sub_dir
         self.transform = transforms.Compose(transforms_)
         self.files = self.get_file_paths(root)
-        self.len = len(self.files)
+        self.length = len(self.files)
 
     def __getitem__(self, index):
-        img_val = Image.open(self.files[index % self.len])
+        img_val = Image.open(self.files[index % self.length])
         img_val = self.transform(img_val)
         return {"val": img_val}
 
     def __len__(self):
-        return self.len
+        return self.length  
 
     def get_file_paths(self, root):
         files = []
