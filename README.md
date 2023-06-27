@@ -54,7 +54,43 @@ we compared RAUNE-Net with eight other UIE methods (i.e., UT-UIE [13], SyreaNet 
 
 ## 🕹️Test
 ### Pretrained Models
-We provide pretrained models for testing `RAUNE-Net`, `WaterNet`, `UGAN`, and `FUnIE-GAN`. Please click [🔗this link](https://drive.google.com/file/d/1eJrACGoU7WLjgbtj507lkiUUEas4lAsv/view?usp=sharing) to download them. After the download is complete, please unzip and put pretrained weights into the `pretrained` folder. Please see [👉here](./pretrained/README.md) to organize the directory structure for testing.
+We provide pretrained models for testing `RAUNE-Net`, `WaterNet`, `UGAN`, and `FUnIE-GAN`. Please click [🔗this link](https://drive.google.com/drive/folders/1pjEh6s6-a3p7qBtkONSlYLmKrfgD6rBk?usp=sharing) to download them. After the download is complete, please unzip and put pretrained weights into the `pretrained` folder. Please see [👉here](./pretrained/README.md) to organize the directory structure for testing.
+
+#### The highest values of objective metrics tested for **RAUNE-Net**
+
+| Epoch | Dataset | PSNR | SSIM |
+| --- | --- | --- | --- |
+| 85 | LSUI400 | 26.812 | 0.876 |
+| 90 | EUVP_Test515 | 26.331 | 0.845 |
+| 95 | UIEB100 | 22.751 | 0.879 |
+| 90 | OceanEx | 22.728 | 0.876 |
+
+#### The highest values of objective metrics tested for **WaterNet**
+
+| Epoch | Dataset | PSNR | SSIM |
+| --- | --- | --- | --- |
+| 85 | LSUI400 | 26.688 | 0.874 |
+| 90 | EUVP_Test515 | 25.285 | 0.833 |
+| 80 | UIEB100 | 22.279 | 0.868 |
+| 50 | OceanEx | 22.132 | 0.887 |
+
+#### The highest values of objective metrics tested for **UGAN**
+
+| Epoch | Dataset | PSNR | SSIM |
+| --- | --- | --- | --- |
+| 85 | LSUI400 | 25.117 | 0.846 |
+| 85 | EUVP_Test515 | 23.636 | 0.805 |
+| 90 | UIEB100 | 21.368 | 0.825 |
+| 60 | OceanEx | 22.436 | 0.822 |
+
+#### The highest values of objective metrics tested for **FUnIE_GAN**
+
+| Epoch | Dataset | PSNR | SSIM |
+| --- | --- | --- | --- |
+| 85 | LSUI400 | 23.272 | 0.818 |
+| 95 | EUVP_Test515 | 24.077 | 0.794 |
+| 85 | UIEB100 | 19.614 | 0.813 |
+| 50 | OceanEx | 20.448 | 0.855 |
 
 ### Test Examples
 
