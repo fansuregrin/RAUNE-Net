@@ -95,6 +95,8 @@ We provide pretrained models for testing `RAUNE-Net`, `WaterNet`, `UGAN`, and `F
 ### Test Examples
 
 #### (1) Test of RAUNE-Net
+
+Single Epoch Test:
 ```bash
 python test_raunenet.py \
     --name test \
@@ -107,7 +109,18 @@ python test_raunenet.py \
     --result_dir results/raunet_test01
 ```
 
+Multiple Epochs Test and Assessment:
+```bash
+bash scripts/test_assess_raunenet.sh
+# name: test
+# checkpoint_dir: pretrained
+# num_down: 2
+# num_blocks: 30
+# use_att_up: false
+```
+
 #### (2) Test of WaterNet
+Single Epoch Test:
 ```bash
 python test_waternet.py \
     --name test \
@@ -118,7 +131,15 @@ python test_waternet.py \
     --result_dir results/waternet01
 ```
 
+Multiple Epochs Test and Assessment:
+```bash
+bash scripts/test_assess_waternet.sh
+# name: test
+# checkpoint_dir: pretrained
+```
+
 #### (3) Test of UGAN
+Single Epoch Test:
 ```bash
 python test_ugan.py \
     --name test \
@@ -129,7 +150,15 @@ python test_ugan.py \
     --result_dir results/ugan01
 ```
 
+Multiple Epochs Test and Assessment:
+```bash
+bash scripts/test_assess_ugan.sh
+# name: test
+# checkpoint_dir: pretrained
+```
+
 #### (4) Test of FUnIE-GAN
+Single Epoch Test:
 ```bash
 python test_funiegan.py \
     --name test \
@@ -138,6 +167,13 @@ python test_funiegan.py \
     --epoch 95 \
     --test_name <YOUR_TESTSET_NAME> \
     --result_dir results/funiegan01
+```
+
+Multiple Epochs Test and Assessment:
+```bash
+bash scripts/test_assess_funiegan.sh
+# name: test
+# checkpoint_dir: pretrained
 ```
 
 ### Calculate `PSNR` and `SSIM`
