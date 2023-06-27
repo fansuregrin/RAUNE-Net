@@ -1,0 +1,14 @@
+# dataset info
+dataset_path: "/DataA/pwz/workshop/Datasets/LSUI3879"
+folder_A: "input"
+folder_B: "GT"
+validation_dir: "validation"
+
+# image info
+chans: 3
+im_width: 256
+im_height: 256
+
+# other configurations
+val_interval: 500 # iterations
+ckpt_interval: 5  # epochs
