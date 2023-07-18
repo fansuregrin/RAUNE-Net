@@ -28,11 +28,11 @@ fi
 
 if [ ${#net_list[@]} -eq 0 ]
 then
-    name=${train_set}_${loss_weight}
+    name=${train_set}_${loss_weights}
     testset_list=("LSUI400" "UIEB100" "ocean_ex" "euvp_test515")
     for test_name in ${testset_list[@]}
     do
-        output_file=${output_dir}/${train_set}_${model_v}_${loss_weight}_${test_name}.csv
+        output_file=${output_dir}/${train_set}_${model_v}_${loss_weights}_${test_name}.csv
         summary $output_file $name $test_name   
     done
 else
@@ -42,7 +42,7 @@ else
         for test_name in ${testset_list[@]}
         do
             name=${train_set}_${net}_${loss_weights}
-            output_file=${output_dir}/${train_set}_${model_v}_${net}_${loss_weight}_${test_name}.csv
+            output_file=${output_dir}/${train_set}_${model_v}_${net}_${loss_weights}_${test_name}.csv
             summary $output_file $name $test_name
         done
     done
