@@ -62,7 +62,7 @@ ckpt_interval = cfg["ckpt_interval"]
 samples_dir = "samples/%s/%s" % (model_v, train_name)
 checkpoint_dir = "checkpoints/%s/%s/" % (model_v, train_name)
 log_dir = os.path.join(checkpoint_dir, 'logs')
-tensorboard_log_dir = os.path.join('ugan_runs', f"{model_v}_{train_name}")
+tensorboard_log_dir = os.path.join('runs', f"{model_v}/{train_name}")
 os.makedirs(samples_dir, exist_ok=True)
 os.makedirs(checkpoint_dir, exist_ok=True)
 
