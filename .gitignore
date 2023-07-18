@@ -1,8 +1,5 @@
 **/__pycache__/
-ugan_runs/
-waternet_runs/
-raunenet_runs/
-funiegan_runs/
+runs/
 checkpoints/
 samples/
 results/
