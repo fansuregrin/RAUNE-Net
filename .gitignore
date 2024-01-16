@@ -9,3 +9,5 @@ pretrained/UGAN/
 pretrained/FUnIE_GAN/
 *.tar.gz
 psnr_ssim_summary/
+*.ipynb
+paper_figures/*.eps
