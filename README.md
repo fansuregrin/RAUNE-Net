@@ -1,5 +1,5 @@
 # RAUNE-Net
-This is the official implementation of RAUNE-Net, "RAUNE-Net: A Residual and Attention-Driven Underwater Image Enhancement Method", Wangzhen Peng, Chenghao Zhou, Runze Hu, Jingchao Cao, [Yutao Liu](https://it.ouc.edu.cn/lyt/main.htm)*, International Forum of Digital Multimedia Communication(IFTC), 2023. Click [here](./paper_figures/poster_for_demostration.pdf) to view our poster demonstration.
+This is the official implementation of RAUNE-Net, "RAUNE-Net: A Residual and Attention-Driven Underwater Image Enhancement Method", Wangzhen Peng, Chenghao Zhou, Runze Hu, [Jingchao Cao](https://it.ouc.edu.cn/cjc/list.htm), [Yutao Liu](https://it.ouc.edu.cn/lyt/main.htm)*, International Forum of Digital Multimedia Communication(IFTC), 2023. Click [here](./paper_figures/poster_for_demostration.pdf) to view our poster demonstration.
 
 ## 🎯Notice
 
