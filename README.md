@@ -270,6 +270,29 @@ If you have any question about this project, please contact `fansuregrin`(or `Wa
 [17] Wen, J., Cui, J., Zhao, Z., Yan, R., Gao, Z., Dou, L., Chen, B.M.: Syreanet: A physically guided underwater image enhancement framework integrating synthetic and real images. arXiv preprint arXiv:2302.08269 (2023)
 
 # 📄Citation
+```bibtex
+@InProceedings{10.1007/978-981-97-3623-2_2,
+    author="Peng, Wangzhen
+    and Zhou, Chenghao
+    and Hu, Runze
+    and Cao, Jingchao
+    and Liu, Yutao",
+    editor="Zhai, Guangtao
+    and Zhou, Jun
+    and Ye, Long
+    and Yang, Hua
+    and An, Ping
+    and Yang, Xiaokang",
+    title="RAUNE-Net: A Residual and Attention-Driven Underwater Image Enhancement Method",
+    booktitle="Digital Multimedia Communications",
+    year="2024",
+    publisher="Springer Nature Singapore",
+    address="Singapore",
+    pages="15--27",
+    abstract="Underwater image enhancement (UIE) poses challenges due to distinctive properties of the underwater environment, including low contrast, high turbidity, visual blurriness, and color distortion. In recent years, the application of deep learning has quietly revolutionized various areas of scientific research, including UIE. However, existing deep learning-based UIE methods generally suffer from issues of weak robustness and limited adaptability. In this paper, inspired by residual and attention mechanisms, we propose a more reliable and reasonable UIE network called RAUNE-Net by employing residual learning of high-level features at the network's bottle-neck and two aspects of attention manipulations in the down-sampling procedure. Furthermore, we collect and create two datasets specifically designed for evaluating UIE methods, which contains different types of underwater distortions and degradations. The experimental validation demonstrates that our method obtains promising objective performance and consistent visual results across various real-world underwater images compared to other eight UIE methods. Our example code and datasets are publicly available at https://github.com/fansuregrin/RAUNE-Net.",
+    isbn="978-981-97-3623-2"
+}
+```
 
 # ⚖️License
 Licensed under a [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) for Non-commercial use only. Any commercial use should get formal permission first.
